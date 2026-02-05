@@ -1,4 +1,4 @@
-# microatomics
+# Microatomics
 
 ## T(x) = π · sin(x) · e^(iθ) + ∇·(SVG ⊗ Geometry)
 
