@@ -1,19 +1,24 @@
 # microatomics
-T(x) = π · sin(x) · e^(iθ) + ∇·(SVG ⊗ Geometry)
+
+## T(x) = π · sin(x) · e^(iθ) + ∇·(SVG ⊗ Geometry)
 
 Where:
-
+```
 T(x): Geometric tensor transformation
-
+```
+```
 π: Mathematical constant (3.14159...)
-
+```
+```
 SVG: SVG path tensor representation
-
+```
+```
 ⊗: Geometric tensor product
-
+```
+```
 ∇: Geometric gradient operator
+```
 
-text
 
 ## Core Features
 
