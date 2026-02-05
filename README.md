@@ -74,22 +74,30 @@ SVG: SVG path tensor representation
 
 ## Quick Start
 
-```bash
-# 1. Install pure math dependencies
-pip install -r requirements-geometric.txt
 
+# 1. Install pure math dependencies
+```
+pip install -r requirements-geometric.txt
+```
 # 2. Start geometric server
+```
 python server/geometric_server.py
+```
 
 # 3. Visit dashboard
 # Open browser to: http://localhost:4760
 # Or load: public/index-geometric.html
+```
 API Endpoints
 Health & Information
 http
 GET    /api/geometric/health      # Runtime health check
 GET    /api/geometric/info        # Geometric engine information
-K'UHUL Operations
+
+```
+
+# K'UHUL Operations
+```
 http
 POST   /api/kuhul/execute         # Execute K'UHUL geometric operation
 POST   /api/kuhul/batch           # Execute multiple operations
@@ -105,30 +113,38 @@ POST   /api/model/{id}/inference  # Model geometric inference
 POST   /api/model/{id}/train      # Train/optimize model
 GET    /api/model/{id}/export     # Export model
 GET    /api/models                # List all models
-Geometric Computation
+```
+# Geometric Computation
 http
 POST   /api/geometric/compute     # Direct geometric computation
-Python Usage
-python
+
+# Python Usage
+```python
 from geometric.pi_tensor_engine import get_kuhul_gpu_engine
 from geometric.svg_tensor_api import get_universal_api
-
+```
 # Get geometric engines
+```
 kuhul_engine = get_kuhul_gpu_engine()
 universal_api = get_universal_api()
+```
 
 # Execute K'UHUL geometric operations
+```
 encryption = kuhul_engine.execute_kuhul('(⤍)', [[1,2,3],[4,5,6]], 'M0,0 C100,50')
 compression = kuhul_engine.execute_kuhul('(↻)', [[1,2,3],[4,5,6],[7,8,9]], 45)
 inference = kuhul_engine.execute_kuhul('(⟿)', 'input data', {'hidden_size': 256})
+```
 
 # Create and use SVG tensor cluster
+```
 cluster = kuhul_engine.create_cluster('my_cluster', [
     [[1, 2, 3], [4, 5, 6]],
     [[0.5, 1.5, 2.5], [3.5, 4.5, 5.5]]
 ])
-
+```
 # Register and use geometric model
+```
 model_spec = {
     'dimensions': (5, 3),
     'pi_phase': 0.25,
@@ -137,9 +153,10 @@ model_spec = {
 universal_api.register_model('my_model', 'classification', model_spec)
 
 result = universal_api.inference('my_model', [[1,2,3],[4,5,6]])
-K'UHUL Glyph Reference
-Geometric Operations
-kuhul
+```
+# K'UHUL Glyph Reference
+## Geometric Operations
+```kuhul
 (⤍) data path_key          # π-geometric vector encryption
 (⤎) encrypted_data path_key # π-geometric vector decryption
 (↻) geometry angle          # Rotational compression using π
@@ -148,9 +165,12 @@ kuhul
 (⟿) input_data params       # Neural path generation (geometric)
 (⤂) weights geometry        # Weight vector application (geometric)
 (⤦) condition true false    # Vector conditional (geometric)
-Mathematical Foundation
-Each glyph operates on geometric principles:
+```
 
+
+# Mathematical Foundation
+## Each glyph operates on geometric principles:
+~~~
 π relationships: Operations use π for scaling and rotation
 
 Geometric constraints: Maintain geometric properties
@@ -158,9 +178,11 @@ Geometric constraints: Maintain geometric properties
 SVG representation: Results can be visualized as SVG
 
 Cluster relationships: Tensors exist in geometric clusters
+~~~
 
-Performance Characteristics
-Strengths
+# Performance Characteristics
+## Strengths
+~~~
 Pure mathematical operations: No framework overhead
 
 Geometric precision: Exact geometric relationships
@@ -170,10 +192,11 @@ SVG visualization: Natural representation of results
 Universal applicability: Works with any geometric data
 
 Minimal dependencies: Easy to deploy anywhere
+~~~
 
-Use Cases
-Geometric data processing: SVG, CAD, 3D model data
-
+# Use Cases
+## Geometric data processing: SVG, CAD, 3D model data
+~~~
 Mathematical simulations: Geometric systems modeling
 
 Educational tools: Teaching geometry and mathematics
@@ -181,7 +204,8 @@ Educational tools: Teaching geometry and mathematics
 Artistic generation: Geometric art and patterns
 
 Scientific computing: Geometric analysis of data
-
+~~~
+~~~
 System Requirements
 Software
 Python 3.9+
@@ -232,10 +256,10 @@ Traditional servers
 
 License
 MIT - Pure Geometric π Runtime
+~~~
+# K'UHUL GPU: Where mathematics meets geometry in a universal inference engine! 🧮
 
-K'UHUL GPU: Where mathematics meets geometry in a universal inference engine! 🧮
-MD
-
+```
 echo ""
 echo "✅ K'UHUL GPU (PURE GEOMETRIC) GENERATION COMPLETE!"
 echo ""
@@ -265,7 +289,7 @@ echo " • Pure mathematical precision"
 echo ""
 echo "K'UHUL GPU: The universal geometric π runtime for SVG tensor clusters! 🧮"
 
-text
+```
 
 ## 🎯 **Key Achievements:**
 
