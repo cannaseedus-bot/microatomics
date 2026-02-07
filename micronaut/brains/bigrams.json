@@ -1,0 +1,4 @@
+{
+  "sealed": true,
+  "note": "Bigram weights are sealed within the object boundary."
+}

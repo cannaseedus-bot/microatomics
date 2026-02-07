@@ -1,0 +1,4 @@
+{
+  "sealed": true,
+  "note": "Trigram weights are sealed within the object boundary."
+}

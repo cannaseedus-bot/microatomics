@@ -1,0 +1,7 @@
+SCO/1 OBJECT: micronaut
+STANDARD: SCXQ7
+MODE: file-centric
+AUTHORITY: sealed
+
+This executable object is resolved through object-internal -ops only.
+Host orchestrators must treat this as opaque data.

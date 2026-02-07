@@ -1,0 +1,4 @@
+{
+  "sealed": true,
+  "note": "Intent mappings are sealed within the object boundary."
+}

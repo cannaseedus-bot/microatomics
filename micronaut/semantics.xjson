@@ -1,0 +1,20 @@
+{
+  "schema": "KUHUL-TSG",
+  "version": "0.1.0",
+  "authority": "sealed",
+  "records": {
+    "message": {
+      "id": "uuid",
+      "time": "unix_ms",
+      "role": "user|system|micronaut",
+      "intent": "chat|generate|classify|complete",
+      "context": "optional",
+      "payload": "utf-8"
+    }
+  },
+  "stream": {
+    "prefix": ">>",
+    "fields": ["t", "ctx", "mass"],
+    "body": "semantic emission"
+  }
+}

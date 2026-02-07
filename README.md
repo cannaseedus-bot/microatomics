@@ -46,6 +46,48 @@ SVG: SVG path tensor representation
 - **Minimal dependencies**: NumPy for arrays, Flask for API
 - **High precision**: Geometric constraints ensure accuracy
 
+## Micronaut Object Server (SCO/1)
+
+Micronaut is a sealed SCO/1 object orchestrated by PowerShell. It exposes a loopback REST API that only appends to or reads from files. There is no JavaScript runtime and no in-memory authority.
+
+```
+micronaut/
+├─ micronaut.s7
+├─ object.toml
+├─ semantics.xjson
+├─ brains/
+│  ├─ trigrams.json
+│  ├─ bigrams.json
+│  └─ meta-intent-map.json
+├─ io/
+│  ├─ chat.txt
+│  ├─ stream.txt
+│  └─ snapshot/
+├─ trace/
+│  └─ scxq2.trace
+└─ proof/
+   └─ scxq2.proof
+```
+
+### `chat.txt` record format
+```
+--- MESSAGE ---
+id: <uuid>
+time: <unix_ms>
+role: user | system | micronaut
+intent: chat | generate | classify | complete
+context: <optional>
+payload:
+<UTF-8 text>
+--- END ---
+```
+
+### `stream.txt` emission format
+```
+>> t=184 ctx=@π mass=0.73
+Hello!
+```
+
 ## Architecture
 # K'UHUL GPU Runtime
 ```
